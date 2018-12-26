@@ -11792,7 +11792,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -11819,7 +11819,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spy_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/Brent/Downloads/SPY (2).csv&#39;</span><span class="p">)</span> <span class="c1"># change directory to your specific machine</span>
@@ -11832,7 +11832,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">])</span>
@@ -11849,7 +11849,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+<div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -11953,7 +11953,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;log_price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">])</span>
@@ -11974,7 +11974,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">252</span><span class="p">]:</span>
@@ -11989,7 +11989,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">spy_df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;log_price&#39;</span><span class="p">,</span> <span class="s1">&#39;ema30&#39;</span><span class="p">,</span> <span class="s1">&#39;ema60&#39;</span><span class="p">,</span> <span class="s1">&#39;ema90&#39;</span><span class="p">,</span> <span class="s1">&#39;ema252&#39;</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;SPY log-price, 1993-2018&#39;</span><span class="p">)</span>
@@ -12006,7 +12006,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[9]:</div>
+<div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -12055,7 +12055,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;day_pct_change&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
@@ -12078,7 +12078,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spy_df</span> <span class="o">=</span> <span class="n">spy_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -12100,7 +12100,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ema90returns</span> <span class="o">=</span> <span class="n">spy_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;ema90&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;ema252&#39;</span><span class="p">]),</span> <span class="s1">&#39;log_price_change&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -12136,7 +12136,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">ema90returns</span><span class="p">,</span> <span class="n">ema252returns</span><span class="p">)</span>
@@ -12152,7 +12152,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[35]:</div>
+<div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -12186,7 +12186,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;strategy_pct_change&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;day_pct_change&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;ema90&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">spy_df</span><span class="p">[</span><span class="s1">&#39;ema252&#39;</span><span class="p">],</span> <span class="mi">1</span><span class="o">+</span><span class="p">(</span><span class="o">.</span><span class="mi">01</span><span class="o">/</span><span class="mi">252</span><span class="p">))</span>
@@ -12200,7 +12200,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">spy_df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">,</span> <span class="s1">&#39;Strategy Adj Close&#39;</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Expected Growth of SPY Buy and Hold Strat vs EMA Crossover Strat, 1993-2018&#39;</span><span class="p">)</span>
@@ -12217,7 +12217,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[37]:</div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -12249,7 +12249,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;P/L Difference: </span><span class="si">{0}</span><span class="s1">%&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
